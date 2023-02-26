@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=deivce-width, initial-
+    scale=1.0">
+     <title>Dental Course Website</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <div class="logo">
+        <img src="images/logo.png" >
+      </div>
+      <div class="nav-links" id="navLinks">
+        <i class="fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul> 
+          <li><a href="Home.html">HOME</a></li>
+          <li><a href="Courses.html">COURSES</a></li>
+          <li><a href="MyAccount.html">MY ACCOUNT</a></li>
+          <li><a href="ContactUs.html">CONTACT US</a></li>
+          <li><a href="Cart.html"><img src="images/cart.png" width="30px" height="30px" ></a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+<div class="text-box">
+  <h1>Learn The Latest Techniques In Dental Care</h1>
+  <p>Our courses provide in-depth training on the newest and most effective dental procedures, so you can provide the best care to your patients.</p>
+  <a href=""class="hero-btn">See Courses</a>
+  <br>
+  <br>
+  <br>
+  <video width="35%" controls>
+    <source src="video.mp4" type="video/mp4" >
+  </video>
+</div>
+   </section>
+
+<!-------- Course --------->
+
+<section class="course">
+  <h1>Courses We Offer</h1>
+  <p></p>
+
+  <div class="row">
+    <div class="course-col">
+      <h3>Intermediate</h3>
+      <p>Snjdn djndjndj djndsjndj dndsjnd</p>
+      <br>
+      <a href="Courses.html" class="course1-btn">More Info</a>
+    </div>  
+    <div class="course-col">
+      <h3>Degree</h3>
+      <p>Snjdn djndjndj djndsjndj dndsjnd</p>
+      <br>
+      <a href="Courses.html" class="course2-btn">More Info</a>
+    </div>
+    <div class="course-col">
+      <h3>Post Graduation</h3>
+      <p>Snjdn djndjndj djndsjndj dndsjnd</p>
+      <br>
+      <a href="Courses.html" class="course3-btn">More Info</a>
+    </div>
+  </div>
+</section>
+
+<!---------- Footer ---------->
+<section class="footer">
+  <a href="AboutUs.html" class="aboutus-btn">About Us</a>
+
+</section>
+
+
+<!---------JavaScript for Toggle Menu-------->
+
+<script>
+      var navLinks = document.getElementById("navLinks");
+      
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+      }
+   </script>
+   
+  </body>
+</html>

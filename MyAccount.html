@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=deivce-width, initial-
+    scale=1.0">
+     <title>Dental Course Website</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <div class="logo">
+        <img src="images/logo.png" >
+      </div>
+      <div class="nav-links" id="navLinks">
+        <i class="fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul> 
+          <li><a href="Home.html">HOME</a></li>
+          <li><a href="Courses.html">COURSES</a></li>
+          <li><a href="MyAccount.html">MY ACCOUNT</a></li>
+          <li><a href="ContactUs.html">CONTACT US</a></li>
+          <li><a href="Cart.html"><img src="images/cart.png" width="30px" height="30px" ></a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+<!---------- Sign Up / Sign In Form Box ---------->
+    <div class="form-box">
+      <h1 id="title">Register</h1>
+      <form>
+        <div class="input-group">
+
+          <div class="input-field" id="nameField">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Full Name" id="contact -name" onkeyup="validatename()">
+            <span id="name-error"></span>
+          </div>
+
+          <div class="input-field" id="phoneField">
+            <i class="fa-solid fa-lock"></i>
+            <input type="tel" placeholder="Phone No.">
+            <span id="phone-error"></span>
+          </div>
+    
+          <div class="input-field">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" placeholder="Email">
+            <span id="email-error"></span>
+          </div>
+    
+          <div class="input-field">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Password">
+            <span id="password-error"></span>
+          </div>
+          <p><a href="#">Forgot password?</a></p>
+        </div>
+        <div class="btn-field">
+          <button type="button" id="signupBtn">Register</button>
+          <span id="Register-error"></span>
+          <button type="button" id="signinBtn"class="disable">Log in</button>
+          <span id="Login-error"></span>
+        </div>
+      </form>
+    
+    </div>
+<script>
+
+let signupBtn = document.getElementById("signupBtn");
+let signinBtn = document.getElementById("signinBtn");
+let nameField = document.getElementById("nameField");
+let phoneField = document.getElementById("phoneField")
+let title = document.getElementById("title");
+
+
+signinBtn.onclick = function(){
+    nameField.style.maxHeight = "0";
+    phoneField.style.maxHeight ="0";
+    title.innerHTML = "Log In";
+    signupBtn.classList.add("disable");
+    signinBtn.classList.remove("disable");
+
+}
+
+signupBtn.onclick = function(){
+    nameField.style.maxHeight = "60px";
+    phoneField.style.maxHeight = "60px"
+    title.innerHTML = "Register";
+    signupBtn.classList.remove("disable");
+    signinBtn.classList.add("disable");
+
+}
+</script>
+</section>
+
+
+
+<!---------JavaScript for Toggle Menu-------->
+
+<script>
+      var navLinks = document.getElementById("navLinks");
+      
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+      }
+   </script>
+<script src="script.js">
+validatename.call
+
+
+</script>
+  </body>
+</html>

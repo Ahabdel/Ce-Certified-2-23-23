@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=deivce-width, initial-
+    scale=1.0">
+     <title>Dental Course Website</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="Home.html"><img src="images/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul> 
+          <li><a href="Home.html">HOME</a></li>
+          <li><a href="Courses.html">COURSES</a></li>
+          <li><a href="MyAccount.html">MY ACCOUNT</a></li>
+          <li><a href="ContactUs.html">CONTACT US</a></li>
+          <li><a href="Cart.html"><img src="images/cart.png" width="30px" height="30px" ></a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<!----------  Cart Item Details ----------->
+<div class="small-container cart-page">
+
+<div class="Product-section">
+  <table>
+    <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+    </tr>
+
+    
+    <tr>
+        <td>
+          <div class="cart-info">
+            <img src="images/Course1.jpg" >
+            <div>
+                <p>Dental Course 1</p>
+                <small> Price: $120.00</small>
+                <br>
+                <a href="">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$50.00</td>
+    </tr>
+
+
+    <tr>
+      <td>
+        <div class="cart-info">
+          <img src="images/Course1.jpg" >
+          <div>
+              <p>Dental Course 1</p>
+              <small> Price: $120.00</small>
+              <br>
+              <a href="">Remove</a>
+          </div>
+        </div>
+      </td>
+      <td><input type="number" value="1"></td>
+      <td>$50.00</td>
+  </tr>
+
+
+  <tr>
+    <td>
+      <div class="cart-info">
+        <img src="images/Course1.jpg" >
+        <div>
+            <p>Dental Course 1</p>
+            <small> Price: $120.00</small>
+            <br>
+            <a href="">Remove</a>
+        </div>
+      </div>
+    </td>
+    <td><input type="number" value="1"></td>
+    <td>$50.00</td>
+  </tr>
+
+  </table>
+</div>
+
+  <div class="total-price">
+
+            <table>
+                  <tr>
+                    <td>Subtotal</td>
+                    <td>$200.00</td>
+                  </tr>
+                  <tr>
+                    <td>Tax</td>
+                    <td>$100.00</td>
+                  </tr>
+                  <tr>
+                    <td>Total</td>
+                    <td>$300.00</td>
+                  </tr>
+            </table>
+
+
+  </div>
+
+
+
+</div>
+
+
+   </section>
+<!---------- Footer ---------->
+<section class="footer">
+  <a href="AboutUs.html" class="aboutus-btn">About Us</a>
+
+</section>
+
+
+<!---------JavaScript for Toggle Menu-------->
+
+<script>
+      var navLinks = document.getElementById("navLinks");
+      
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+      }
+   </script>
+   
+  </body>
+</html>

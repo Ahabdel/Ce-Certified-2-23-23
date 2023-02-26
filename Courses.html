@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=deivce-width, initial-
+    scale=1.0">
+     <title>Dental Course Website</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <div class="logo">
+        <img src="images/logo.png" >
+      </div>
+      <div class="nav-links" id="navLinks">
+        <i class="fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul> 
+          <li><a href="Home.html">HOME</a></li>
+          <li><a href="Courses.html">COURSES</a></li>
+          <li><a href="MyAccount.html">MY ACCOUNT</a></li>
+          <li><a href="ContactUs.html">CONTACT US</a></li>
+          <li><a href="Cart.html"><img src="images/cart.png" width="30px" height="30px" ></a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="container">
+      <h2>Our Courses</h2>
+      <div class="price-row">
+        <div class="price-col">
+          <p>Starter</p>
+          <h4>19$ <span>/ month</span></h4>
+          <ul>
+            <li>1 Website</li>
+            <li>1 Website</li>
+            <li>1 Website</li>
+            <li>1 Website</li>
+            <li>1 Website</li>
+          </ul>
+          <button>Add To Cart</button>
+        </div>
+        <div class="price-col">
+          <p>Advanced</p>
+          <h4>19$ <span>/ month</span></h4>
+          <ul>
+            <li>1 Website</li>
+            <li>1 Website</li>
+            <li>1 Website</li>
+            <li>1 Website</li>
+            <li>1 Website</li>
+          </ul>
+          <button>Add To Cart</button>
+        </div>
+        <div class="price-col">
+          <p>Premium</p>
+          <h4>19$ <span>/ month</span></h4>
+          <ul>
+            <li>1 Website</li>
+            <li>1 Website</li>
+            <li>1 Website</li>
+            <li>1 Website</li>
+            <li>1 Website</li>
+          </ul>
+          <button>Add To Cart</button>
+        </div>
+      </div>
+    </div>
+   </section>
+
+<!---------- Footer ---------->
+<section class="footer">
+  <a href="AboutUs.html" class="aboutus-btn">About Us</a>
+
+</section>
+
+
+<!---------JavaScript for Toggle Menu-------->
+
+<script>
+      var navLinks = document.getElementById("navLinks");
+      
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+      }
+   </script>
+   
+  </body>
+</html>

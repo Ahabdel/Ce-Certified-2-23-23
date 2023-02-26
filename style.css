@@ -1,0 +1,472 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+/*------- Home --------*/
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4, 9, 30, 0.7)), url(Images/Dentalbanner.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #46aece;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+.text-box{
+  width: 90%;
+  color: #8eb7ec;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+  margin: 10px 0 40px;
+  font-size: 16px;
+  color: #fff;
+}
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  border: 1px solid #46aece;
+  background: #46aece;
+  transition: 1s;
+}
+.course1-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.course1-btn:hover {
+  border: 1px solid #46aece;
+  background: #46aece;
+  transition: 1s;
+}
+.course2-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.course2-btn:hover {
+  border: 1px solid #46aece;
+  background: #46aece;
+  transition: 1s;
+}
+.course3-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.course3-btn:hover {
+  border: 1px solid #46aece;
+  background: #46aece;
+  transition: 1s;
+}
+.aboutus-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+  padding: 12px 34px;
+  font-size: 13px;
+  position: relative;
+  cursor: pointer;
+}
+
+.footer{
+  width: 100%;
+  text-align: center;
+}
+
+
+nav .fa-solid{
+  display: none;
+
+}
+@media(max-width: 700px) {
+  .text-box h1{
+    font-size: 20px;
+  }
+  .nav-links ul li{
+    display: block;
+  }
+  .nav-links{
+    position: absolute;
+    background: #46aece;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+  }
+  nav .fa-solid{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul{
+      padding: 30px;
+  }
+}
+
+/*------ Course -------*/
+
+.course{ 
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.text-box h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+.course col p{
+  color: #777;;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+
+}
+
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.course-col{
+  flex-basis: 31%;
+  background: #c9d9ee;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.course-col h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.course-col:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+  .row{
+    flex-direction: column;
+  }
+}
+
+/*----------- My Account Page ------------*/
+.sub-header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/MyAccount.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: #000000;
+}
+.form-box{
+  width: 90%;
+  max-width: 450px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  background: #fff;
+  padding: 50px 60px 70px;
+  text-align: center;
+}
+.form-box h1{
+  font-size: 30px;
+  margin-bottom: 60px;
+  color: #8eb7ec;
+  position: relative;
+}
+.form-box h1::after{
+  content: '';
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  background: #8eb7ec;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+.input-field{
+  background:#eaeaea;
+  margin: 15px 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  max-height: 65px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+input{
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 18px 15px;
+}
+.input-field i{
+  margin-left: 15px;
+  color: #999;
+}
+form p{
+  text-align: left;
+  font-size: 13px;
+
+}
+form p a{
+  text-decoration: none;
+  color: #8eb7ec;
+}
+.btn-field{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-field button{
+  flex-basis: 48%;
+  background: #8eb7ec;
+  color: #fff;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 1s;
+}
+
+.btn-field button.disable{
+  background: #eaeaea;
+  color: #555;
+}
+
+
+/*----- Validation Form For My Account Page------*/
+
+.input-group span{
+  font-size: 14px;
+  color: red;
+
+}
+
+.btn-field span{
+  font-size: 14px;
+  color: red;
+}
+
+
+/*------- Courses Page -------*/
+.container h2{
+  color: #fff;
+  font-size: 32px;
+  padding: 50px 0;
+  text-align: center;
+}
+.price-row{
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 25px;
+}
+.price-col{
+  background: #1f283b;
+  padding: 10% 15%;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+
+.price-col p{
+  font-size: 22px;
+}
+
+.price-col h4{
+  font-size: 44px;
+  margin: 20px 0 40px;
+  font-weight: 500;
+}
+
+.price-col h4 span{
+  font-size: 16px;
+}
+
+.price-col ul{
+  text-align: left;
+  margin: 20px 0;
+  color: #ddd;
+  list-style: none;
+}
+.price-col ul li{
+  margin: 15px 0;
+}
+.price-col ul li::before{
+  content: '\2022';
+  color: #46aece;
+  font-weight: bold;
+  margin-right: 8px;
+}
+.price-col button{
+  width: 100%;
+  padding: 14px 0;
+  background: transparent;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #46aece;
+  border-radius: 6px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+.price-col button:hover{
+  background: #46aece;
+}
+
+
+
+/*----- Cart Items --------*/
+
+
+
+.cart-page{
+  margin: 80px auto;
+
+}
+.Product-section table{
+  width: 80%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: #8eb7ec;
+} 
+.cart-info{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+th{
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  background: #46aece;
+  font-weight: normal;
+}
+td{
+  padding: 10px 5px;
+}
+td input{
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+td a{
+  color: #46aece;
+  font-size: 12px;
+}
+
+td img{
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+.total-price{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-price table{
+  margin: 0 auto;
+  margin-left: 68.5%;
+  border-collapse: collapse;
+  background-color: #8eb7ec;
+  border-top: 3px solid #46aece;
+  width: 100%;
+  max-width: 400px;
+}
+
+td:last-child{
+  text-align: right;
+}
+th:last-child{
+  text-align: right;
+}
+
